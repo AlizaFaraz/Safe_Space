@@ -2,6 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const quoteText = document.getElementById('quote');
   const quoteAuthor = document.getElementById('author');
   const newQuoteButton = document.getElementById('new-quote');
+  // const Tips = document.getElementById('Tips'); // 
+  // let index = 0;
+  // function playTips() {
+  //   Tips.play(); // Calling the playTips function
+  // }
+  
+  // Tips.addEventListener('play', playTips); // 
 
   async function fetchQuote() {
     try {

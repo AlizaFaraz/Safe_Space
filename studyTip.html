@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Study Tips</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="study.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="studyTips.html">Study Tips</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <audio id="tip" autoplay>
+      <source src="tips.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
+  <header class="App-header">
+      <nav>
+          <ul>
+              <li><a href="index.html"> Welcome</a></li>
+              <li><a href="#roomsLink">Rooms</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="ourProducts.html">Our Products</a></li>
+              <li><a href="studyTip.html">Study Tips</a></li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+      </nav>
+  </header>
+  
+
+  
+  <h1>Study Tips</h1>
   <div class="container">
-    <h1>Study Tips</h1>
+    
+    <p> Quote of the Day!</p>
     <div id="quote-container">
       <p id="quote"></p>
       <p id="author"></p>
       <button id="new-quote">New Quote</button>
     </div>
+  </div>
+
+  <div class = "tips">
+    <p> <b>Study Skills </b>
+    <ul> Plan for longer study time. </ul>
+    <ul> Find a quiet space that is used for studying only.</ul>
+    <ul>Develop a regular routine.</ul>
+    <ul> Take frequent breaks.</ul>
+    <ul> Keep up with work and do not wait until the last minute to study.</ul>
+    <ul> Allow extra time for writing assignments to includes editing & rewriting.</ul>
+   <ul> Use tutors when necessary.</ul>
+  </p>
+    <iframe width="420" height="315"
+      src=" https://www.youtube.com/watch?v=3Yodu0m6F8o&t=1900s&ab_channel=TakeYourTime">
+      </iframe>
   </div>
   <script src="studyTips.js"></script>
 </body>

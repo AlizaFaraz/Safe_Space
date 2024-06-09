@@ -48,14 +48,27 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("rooms").scrollIntoView({ behavior: "smooth" });
     });
 
-    // Rooms functionality
-    const rooms = document.querySelectorAll(".room");
-    rooms.forEach((room, index) => {
-        room.addEventListener("click", () => {
-            const startTime = Date.now();
-            alert(`Entered room ${index + 1}`);
-            const endTime = Date.now();
-            console.log(`Time spent in room ${index + 1}: ${(endTime - startTime) / 1000} seconds`);
-        });
-    });
+
+      // Timer Functionality
+      const timerElement = document.getElementById('timer');
+      let seconds = 0, minutes = 0, hours = 0;
+
+      function updateTimer() {
+        seconds++;
+        if (seconds == 60) {
+          seconds = 0;
+          minutes++;
+          if (minutes == 60) {
+            minutes = 0;
+            hours++;
+          }
+        }
+
+        timerElement.textContent = 
+          (hours < 10 ? '0' + hours : hours) + ':' +
+          (minutes < 10 ? '0' + minutes : minutes) + ':' +
+          (seconds < 10 ? '0' + seconds : seconds);
+      }
+
+      setInterval(updateTimer, 1000);
 });
