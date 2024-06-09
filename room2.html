@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room 1 - Rainy Day</title>
+    <link rel="stylesheet" href="rainy.css">
+</head>
+    <div class="App" id="app">
+        <header class="App-header">
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Welcome</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#subjects">Study Tips</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1 class="neon">ROOM TWO </h1>
+                <h1 class="header"><em></em></h1>
+                <p class="neon">Welcome to Room 2, the ThoughtFull Thinking Room... Enjoy your stay!</p>
+            </div>
+
+<body>
+    <div class="room-container">
+        <img src="relax.gif" alt="Rainy Day Background" class="background-image">
+        <audio id="backgroundSound" loop autoplay>
+            <source src="Free-meditative-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <input type="range" min="0" max="1" step="0.1" value="0.5" id="volumeControl">
+        <button onclick="window.location.href='rainy.html'">Previous Room</button>
+        <button onclick="window.location.href='room3.html'">Next Room</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
